@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/header.ejs')%>
+</head>
+<body>
+
+    <%- include('./partials/navbar2.ejs')%>
+    <div class="container text-center my-5 py-5" style="color: white; font-size: 2rem;">
+      Transactions List
+    </div>
+    <% if(transactions.length > 0) { %>
+      <div class="container px-5 " style="min-height:100vh;">
+        <table class="table table-hover"style="background-color: white;">
+          <tbody>
+            <thead style="font-weight: 600; background-color: #00BFA6;">
+              <td class="px-3">Sender</td>
+              <td class="px-3">Reciever</td>
+              <td class="px-3">Amount</td>
+              <td class="px-3" id="dt">Date & Time</td>
+            </thead>
+            <% for(var i=0;i< transactions.length;i++){ %>
+              <tr>
+                <td class="px-3"><%= transactions[i].sender %></td>
+                <td class="px-3"><%= transactions[i].receiver %></td>
+                <td class="px-3"><%= transactions[i].amount %></td>
+                <td class="px-3"><%= transactions[i].date_time %></td>
+              </tr>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+
+    <% } else { %>
+      <br>
+      <ul class="container">
+        <li class="collection-item">There are no customers.</li>
+      </ul>
+    <% } %>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

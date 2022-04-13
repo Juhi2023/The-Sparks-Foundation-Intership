@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/header.ejs')%>
+    <style>
+        .form-boxes{
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 0.2rem solid #00BFA6;
+            margin: 2rem 0;
+            padding: 0.4rem 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <%- include('./partials/navbar2.ejs')%>
+
+    <div class="container d-flex flex-column justify-content-center" style="height:100vh;">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="container text-center py-5 mt-5" style="color: white; font-size: 1.6rem; background-color:rgba(93, 91, 91, 0.411);">
+                    Transfer Money
+                </div>
+
+                <%- include('./partials/message-box.ejs')%>
+
+                <form action="/transfer/<%= id %>" method="post" class="px-5 py-5" style="background-color: whitesmoke">
+                    <% for (var i=0; i<customers.length; i++) {%>
+                        <% if(customers[i].bankID == id){%>
+                            <input type="text" value="<%= customers[i].name %>" disabled class="form-boxes">
+                        <%}%>
+                    <%}%>
+
+                    <br>
+
+                    <select name="receiver" id="receiver" class="form-boxes">
+                        <option value="null" disabled selected>----- Select the Receiver ------</option>
+                        <% for (var i=0; i<customers.length; i++) {%>
+                            <% if(customers[i].bankID != id){%>
+                                <option value="<%= customers[i].name %>"><%= customers[i].name%> (<%= customers[i].balance%>)</option>
+                            <%}%>
+                        <%}%>
+                    </select> 
+                    <br>
+                    <input id="amount" type="tel"  name="amount" class="form-boxes"> 
+                    <br>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary mx-3" style="background-color: #00BFA6; border-color: #00BFA6;" type="submit" name="action">Send</button></td>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+ 
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
+
+
+

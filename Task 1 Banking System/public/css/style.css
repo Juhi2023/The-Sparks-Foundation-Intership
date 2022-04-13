@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+    font-family: 'Varela Round', sans-serif;
+    overflow-x: hidden;
+}
+
+/*navbar*/
+.navbar{
+    background-color: rgba(93, 91, 91, 0.411);
+}
+
+.navbar-nav{
+    text-transform: uppercase;
+}
+
+.navbar-brand{
+    color: #00BFA6 !important; 
+    font-weight: 700 !important;
+}
+
+/*home*/
+.home{
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+.home img{
+    width: 35rem;
+}
+
+/*services*/
+#services{
+    background-color: rgba(93, 91, 91, 0.411);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+#services p{
+    font-size: 1.5rem;
+}
+#services .card p{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#services .card img{
+    height: 20rem;
+}
+#services .card-body a img{
+    width: 2rem;
+    height: 2rem;
+}
+#services .card-arrow{
+    transition: all ease 0.5s;
+}
+#services .card-arrow:hover{
+    transform: scale(1.2);
+}
+
+
+/*footer*/
+footer{
+    color: white;
+    text-align: center;
+    padding: 3rem 0 1rem;
+    
+}
+footer h3{
+    font-size: 1.3rem;
+}
+footer a{
+    font-size: 2rem;
+    margin: 1rem;
+    color: #00BFA6 !important;
+}
+
+@media only screen and (max-width: 990px) {
+    html{
+        font-size: 75%;
+    }
+  }
+
+  @media only screen and (max-width: 725px) {
+    html{
+        font-size: 70%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .card{
+        width: 25rem !important;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .home img{
+        width:25rem;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    html{
+        font-size: 55%;
+    }
+  }

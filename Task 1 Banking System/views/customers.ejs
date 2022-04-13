@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/header.ejs')%>
+</head>
+<body>
+
+    <%- include('./partials/navbar2.ejs')%>
+    <div class="container text-center my-5 py-5" style="color: white; font-size: 2rem;">
+        Customers
+    </div>
+    <% if(customers.length > 0) { %>
+    
+    <div class="container px-5 ">
+      <table class="table table-hover"style="background-color: white;">
+        <tbody>
+        <% for(var i=0;i< customers.length;i++){ %>
+          <tr>
+            <td class="px-3"><%= customers[i].name %></td>
+            <td class="text-end">
+              <a href="customers/<%= customers[i].bankID %>" style="text-decoration: none;">
+                <button type="button" class="btn btn-primary" style="background-color: #00BFA6; border-color: #00BFA6;">View</button>
+              </a> 
+              <a href="/transfer/<%= customers[i].bankID %>" style="text-decoration: none;">
+                <button type="button" class="btn btn-primary mx-3" style="background-color: #00BFA6; border-color: #00BFA6;">Transfer</button></td>
+              </a> 
+          </tr>
+        <% } %>
+        </tbody>
+      </table>
+    </div>
+
+    <% } else { %>
+      <br>
+      <ul class="container">
+          <li class="collection-item">There are no customers.</li>
+      </ul>
+    <% } %>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

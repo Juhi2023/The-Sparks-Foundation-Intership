@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/header.ejs')%>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+
+    <!-------------------------------------home--------------------------------------------->
+    <div class="home d-flex flex-column flex-md-row justify-content-md-evenly align-items-center mt-5 pt-5" id="home">
+      <img src="/img/transfer.svg" alt="" class="m-5" data-aos="zoom-in-up" >
+      <div class="home-content my-auto" data-aos="fade-left">
+        <h1>Welcome to Spark Bank</h1>
+        <br><br>
+        <a href="#services">
+          <img src="/img/icons8-back-to-30.png" alt="" style="width: 3rem;">
+        </a>
+      </div>
+    </div>
+
+
+    <!----------------------------------Services------------------------------------------->
+    <div id="services" class="my-5 py-5 container-fluid">
+      <p class="text-uppercase">Services</p>
+      <div class="card-container d-flex flex-column flex-md-row justify-content-md-evenly align-items-center py-5 my-5">
+        
+        <div class="card d-flex flex-column my-5" style="width: 18rem;" data-aos="zoom-in-up">
+          <img src="/img/undraw_add_post_re_174w.svg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <p class="card-text">View Customers & Transfer Money</p>
+            <a href="/customers"><img src="/img/icons8-back-to-30.png" alt="" class="card-arrow"></a>
+          </div>
+        </div>
+    
+        <div class="card d-flex flex-column my-5" style="width: 18rem;" data-aos="zoom-in-up">
+          <img src="/img/undraw_private_data_re_4eab.svg" class="card-img-top p-3" alt="...">
+          <div class="card-body align-content-end">
+            <p class="card-text">Transaction History</p>
+            <a href="/transactions">
+              <img src="/img/icons8-back-to-30.png" alt="" class="card-arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
