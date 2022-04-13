@@ -7,7 +7,7 @@ const path = require("path");
 const mysql= require('mysql2');
 
 
-const port=3000||process.env.PORT;
+const port = 3000||process.env.PORT;
 app.use(bodyparser.urlencoded({extended:false}))
 app.use(bodyparser.json())
 app.set('view engine', 'ejs');
@@ -180,6 +180,6 @@ app.use((req, res) => {
 });
 
 
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
     console.log(`listening at port: ${port}`);
 })
