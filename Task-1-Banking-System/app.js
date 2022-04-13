@@ -7,7 +7,7 @@ const path = require("path");
 const mysql= require('mysql2');
 
 
-const port = 3000||process.env.PORT;
+const port = process.env.PORT || 3000;
 app.use(bodyparser.urlencoded({extended:false}))
 app.use(bodyparser.json())
 app.set('view engine', 'ejs');
