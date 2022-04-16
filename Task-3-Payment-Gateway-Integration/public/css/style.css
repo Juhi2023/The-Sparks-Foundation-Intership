@@ -1,0 +1,184 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+    overflow-x: hidden;
+    background-color: #00203F;
+    color: #ADF0D1;
+}
+
+/*navbar*/
+.navbar{
+    background-color: #00203F;
+}
+
+.navbar-nav{
+    text-transform: uppercase;
+}
+
+.navbar-brand{
+    color: #51C1AF !important; 
+    font-weight: 700 !important;
+    font-size: 1.8rem;
+}
+
+/*home*/
+.home{
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.home img{
+    width: 35rem;
+}
+
+.about-head{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*services*/
+#services{
+    background-color: #ADF0D1;
+    text-align: center;
+    color: #00203F;
+    font-weight: 600;
+}
+
+#services p{
+    font-size: 1.5rem;
+}
+
+#services .card p{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card img{
+    max-width: 6rem;
+}
+
+/*footer*/
+footer{
+    color: #ADF0D1;
+    text-align: center;
+    padding: 3rem 0 0;
+    background-color: #00203F;
+}
+
+.contact{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer h3{
+    font-size: 1.3rem;
+}
+
+footer a{
+    font-size: 2rem;
+    margin: 1rem;
+    color: #ADF0D1 !important;
+}
+
+.copy{
+    color: white;
+    background-color: #002e5b;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+#donate{
+    color: #002e5b;
+    text-decoration: none;
+    background-color: #ADF0D1;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+#donate:hover{
+    background-color: white;
+}
+
+.carousel-caption{
+    font-size: 2.2rem;
+}
+
+.carousel-inner{
+    border-bottom: 2rem solid #00203F;
+}
+
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom: 0;
+    top: 70%;
+}
+
+@media only screen and (max-width: 1060px) {
+    html{
+        font-size: 65%;
+    }
+    .carousel-caption{
+        font-size: 1.8rem;
+    }
+    #donate{
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    html{
+        font-size: 65%;
+    }
+    .carousel-caption{
+        font-size: 1.6rem;
+    }
+    #donate{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .carousel-caption{
+        font-size: 1.3rem;
+        top: 65%;
+    }
+
+    #donate{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    html{
+        font-size: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        width: 25rem !important;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .home img{
+        width:25rem;
+    }
+    .carousel-caption{
+        font-size: 1rem;
+    }
+    #donate{
+        font-size: 0.9em;
+        padding: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    html{
+        font-size: 55%;
+    }
+}

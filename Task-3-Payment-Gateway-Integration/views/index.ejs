@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./partials/head.ejs') %>
+</head>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+
+    
+    <!-------------------------------------home--------------------------------------------->
+    <br><br>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" id="home" >
+      <div class="carousel-inner" style="background-color: #00203F; margin: 0;">
+        <div class="carousel-item active">
+          <img src="img/img1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="text-uppercase fw-bold" data-aos="zoom-out-up">Let’s help the needy</p>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/img2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <p class="text-uppercase fw-bold" data-aos="zoom-out-up">Helping is more caring</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/img3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <p class="text-uppercase fw-bold" data-aos="zoom-out-up" >Together we can make a Difference</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br><br>
+    <div class="container-fluid text-center">
+      <%- include('./partials/amount.ejs') %>
+    </div>
+    
+    <!--about-->
+    <div class="container px-5 pt-5 my-5 text-center" id="about">
+      <hr>
+      <p class="about-head">About</p>
+      <hr>
+      <br>
+      <p class="text-justify">
+        Meda is an NGO in India based in XYZ. We have worked extensively for more than three 2 decades to reach out and rehabilitate differently able children from the underprivileged segment. Meda NGO works with 400 branches in India and 40 branches abroad while focusing on alleviating disabilities and providing proper Physical, Social, and Economic Rehabilitation to the needy. We do this through well-planned and comprehensive programs in health, education, rehabilitation, corrective surgeries, and helping aid distribution making us the best charity organization in India.
+      </p>
+    </div>
+
+    <!----------------------------------Services------------------------------------------->
+    <div id="services" class="my-5 container-fluid">
+      <div class="card-container d-flex flex-wrap flex-row justify-content-center align-items-center py-5 ">
+        
+        <div class="card d-flex flex-column align-items-center" style="width: 11rem;" data-aos="zoom-in-up">
+          <img src="/img/icons8-education-64.png" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <p class="card-text">Education</p>
+          </div>
+        </div>
+    
+        <div class="card d-flex flex-column align-items-center" style="width: 11rem;" data-aos="zoom-in-up">
+          <img src="/img/icons8-communication-skill-80.png" class="card-img-top p-3" alt="...">
+          <div class="card-body align-content-end">
+            <p class="card-text">Skill Development</p>
+          </div>
+        </div>
+
+        <div class="card d-flex flex-column align-items-center" style="width:11rem;" data-aos="zoom-in-up">
+          <img src="/img/icons8-cloth-64 (1).png" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <p class="card-text">Food & Cloth</p>
+          </div>
+        </div>
+
+        <div class="card d-flex flex-column align-items-center" style="width: 11rem;" data-aos="zoom-in-up">
+          <img src="/img/icons8-treatment-64.png" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <p class="card-text">Treatment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <%- include('./partials/footer.ejs') %>
+      
+</body>
+</html>
